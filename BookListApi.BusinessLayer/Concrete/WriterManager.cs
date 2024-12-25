@@ -41,6 +41,7 @@ namespace BookListApi.BusinessLayer.Concrete
 
         public void TUpdate(Writer entity)
         {
+
             _writerDal.Update(entity);
         }
     }

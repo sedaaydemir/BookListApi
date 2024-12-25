@@ -28,6 +28,24 @@ namespace BookListApi.WebApi.Controllers
             _categoryService.TInsert(category);
             return Ok("Ekleme Başarılı");
         }
+        [HttpDelete]
+        public IActionResult DeleteCategory(int id)
+        {
+            _categoryService.TDelete(id);
+            return Ok("Silme Başarılı");
+        }
+        [HttpPut]
+        public IActionResult UpdateCategory(Category category)
+        {
+            _categoryService.TUpdate(category);
+            return Ok("Güncelleme Yapıldı!");
+        }
+        [HttpGet("GetCategory")]
+        public IActionResult GetCategory(int id)
+        {
+            var value = _categoryService.TGetById(id);
+            return Ok(value);
+        }
 
     }
 }

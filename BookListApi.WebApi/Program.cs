@@ -1,6 +1,16 @@
+using BookListApi.BusinessLayer.Abstract;
+using BookListApi.BusinessLayer.Concrete;
+using BookListApi.DataAccessLayer.Abstract;
+using BookListApi.DataAccessLayer.Context;
+using BookListApi.DataAccessLayer.EntityFramework;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<ICategoryService,CategoryManager>();
+builder.Services.AddScoped<ICategoryDal,EfCategoryDal>();
+
+builder.Services.AddDbContext<ApiContext>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

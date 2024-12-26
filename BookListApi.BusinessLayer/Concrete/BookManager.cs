@@ -28,6 +28,11 @@ namespace BookListApi.BusinessLayer.Concrete
             return _bookDal.GetAll();
         }
 
+        public int TGetBookCount()
+        {
+            return _bookDal.GetBookCount();
+        }
+
         public Book TGetById(int id)
         {
             return _bookDal.GetById(id);

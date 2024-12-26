@@ -10,6 +10,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ICategoryService,CategoryManager>();
 builder.Services.AddScoped<ICategoryDal,EfCategoryDal>();
 
+builder.Services.AddScoped<IBookService,BookManager>();
+builder.Services.AddScoped<IBookDal,EfBookDal>();
+
+builder.Services.AddScoped<IFeatureService,FeatureManager>();
+builder.Services.AddScoped<IFeatureDal,EfFeatureDal>();
+
+builder.Services.AddScoped<IWriterService,WriterManager>();
+builder.Services.AddScoped<IWriterDal,EfWriterDal>();
+
 builder.Services.AddDbContext<ApiContext>();
 
 builder.Services.AddControllers();

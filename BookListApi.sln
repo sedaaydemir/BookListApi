@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookListApi.DataAccessLayer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookListApi.BusinessLayer", "BookListApi.BusinessLayer\BookListApi.BusinessLayer.csproj", "{219FA63D-D0D1-43C0-BDED-C7917282D875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListApi.WebApi", "BookListApi.WebApi\BookListApi.WebApi.csproj", "{0CCCAB18-EFD1-4A5D-816A-63922E098720}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookListApi.WebApi", "BookListApi.WebApi\BookListApi.WebApi.csproj", "{0CCCAB18-EFD1-4A5D-816A-63922E098720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListApi.WebUi", "BookListApi.WebUi\BookListApi.WebUi.csproj", "{6C2852F7-D7AA-4B6F-9DF2-2F9BC2A4C454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0CCCAB18-EFD1-4A5D-816A-63922E098720}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CCCAB18-EFD1-4A5D-816A-63922E098720}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CCCAB18-EFD1-4A5D-816A-63922E098720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C2852F7-D7AA-4B6F-9DF2-2F9BC2A4C454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C2852F7-D7AA-4B6F-9DF2-2F9BC2A4C454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C2852F7-D7AA-4B6F-9DF2-2F9BC2A4C454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C2852F7-D7AA-4B6F-9DF2-2F9BC2A4C454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,5 +15,12 @@ namespace BookListApi.DataAccessLayer.EntityFramework
         public EfBookDal(ApiContext context) : base(context)
         {
         }
+
+        public int GetBookCount()
+        {
+            var context =new ApiContext();
+            int value = context.Books.Count();
+            return value;
+        }
     }
 }

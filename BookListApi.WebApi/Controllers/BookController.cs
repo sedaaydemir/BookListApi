@@ -46,5 +46,10 @@ namespace BookListApi.WebApi.Controllers
             var value = _bookService.TGetById(id);
             return Ok(value);
         }
+        [HttpGet("BookCount")]
+        public IActionResult BookCount()
+        {
+            return Ok(_bookService.TGetBookCount());
+        }
     }
 }

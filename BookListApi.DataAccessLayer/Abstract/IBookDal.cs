@@ -9,5 +9,6 @@ namespace BookListApi.DataAccessLayer.Abstract
 {
     public interface IBookDal : IGenericDal<Book>
     {
+        int GetBookCount();
     }
 }

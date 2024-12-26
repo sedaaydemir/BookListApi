@@ -9,5 +9,6 @@ namespace BookListApi.BusinessLayer.Abstract
 {
     public interface IBookService:IGenericService<Book>
     {
+        public int TGetBookCount();
     }
 }
